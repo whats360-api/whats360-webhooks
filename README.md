@@ -7,4 +7,4 @@ How to send WhatsApp events from [whats360.live](https://whats360.live) to your 
 
 Your receive URL and secret are private to your account. Do not publish them.
 
-WhatsApp: https://wa.me/whats360.live · Direct chat support: https://wa.me/201030741766 · info@whats360.live · https://whats360.live
+WhatsApp: https://wa.me/whats360.live · Direct chat support: https://wa.me/201030741766 · info@whats360.live · https://whats360.live?utm_source=github&utm_medium=repo_readme&utm_campaign=growth30&utm_content=webhooks-footer
