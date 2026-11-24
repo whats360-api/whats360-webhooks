@@ -1,6 +1,6 @@
-# Whats360 Webhooks
+# whats360.live Webhooks
 
-Derived from the webhook guide inside the Whats360 dashboard. No request or integration was run to write it. Receive URLs and secrets below are placeholders.
+Derived from the webhook guide inside the whats360.live dashboard. No request or integration was run to write it. Receive URLs and secrets below are placeholders.
 
 ## What is a webhook?
 A URL that receives data automatically when an event happens. Example: a new WhatsApp message arrives and its data is sent to your URL. Common uses: save customers in a CRM, notify your team, trigger Zapier or Make, log chats to a database.
@@ -8,8 +8,8 @@ A URL that receives data automatically when an event happens. Example: a new Wha
 ## Outgoing and incoming
 | Type | Meaning | Use when |
 |---|---|---|
-| Outgoing | Whats360 sends data to your URL on events | Tell an external system about an incoming message or a failed send |
-| Incoming | An external service sends data to a private URL for your account, and Whats360 turns it into a WhatsApp message | A store sends a new order and the customer gets a message |
+| Outgoing | whats360.live sends data to your URL on events | Tell an external system about an incoming message or a failed send |
+| Incoming | An external service sends data to a private URL for your account, and whats360.live turns it into a WhatsApp message | A store sends a new order and the customer gets a message |
 
 ## Events
 | Event | When |
@@ -51,7 +51,7 @@ Expected response on success:
 ```
 
 ## Shopify
-1. Whats360: create an Incoming webhook with the Shopify template. Copy the receive URL.
+1. whats360.live: create an Incoming webhook with the Shopify template. Copy the receive URL.
 2. Shopify: Settings, Notifications, Webhooks, Create Webhook. Pick the Topic, paste the URL, Format JSON.
 3. Save.
 
@@ -64,7 +64,7 @@ Sample payload:
 Shopify sends `X-Shopify-Hmac-SHA256`; add a Secret when creating the webhook for automatic verification. Shopify retries if it gets no 200 within 5 seconds.
 
 ## WooCommerce
-1. Whats360: create an Incoming webhook with the WooCommerce template. Copy the receive URL.
+1. whats360.live: create an Incoming webhook with the WooCommerce template. Copy the receive URL.
 2. WordPress: WooCommerce, Settings, Advanced, Webhooks, Add Webhook. Name, Status Active, Topic, paste the URL in Delivery URL.
 3. In Secret, enter the same secret you set in Whats360. Save.
 
@@ -77,7 +77,7 @@ Sample payload:
 Troubleshooting: WooCommerce, Status, Logs. WooCommerce disables a webhook after repeated failures, so make sure the endpoint returns 200 OK.
 
 ## n8n
-1. Create a webhook in the Whats360 dashboard and copy the notification URL.
+1. Create a webhook in the whats360.live dashboard and copy the notification URL.
 2. In n8n add a Webhook trigger node and paste the URL.
 3. Add actions such as Google Sheets or email.
 4. Activate and test by sending a WhatsApp message.
