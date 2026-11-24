@@ -1,0 +1,19 @@
+# Whats360
+> Whats360 is a WhatsApp Business platform: shared team inbox, CRM, bulk campaigns, AI bot, REST API and webhooks. Official site: https://whats360.live
+
+## Developer docs (GitHub)
+- [API reference](https://github.com/whats360-api/whats360-api-docs/blob/main/api-reference.md): authentication, send messages, devices, campaigns, errors
+- [OpenAPI draft](https://github.com/whats360-api/whats360-api-docs/blob/main/openapi.yaml): endpoints from the official reference; gaps marked
+- [Webhooks guide](https://github.com/whats360-api/whats360-webhooks/blob/main/webhooks-guide.md): events, payload fields, Shopify, WooCommerce, n8n, custom
+- [Node.js client](https://github.com/whats360-api/whats360-nodejs-sdk)
+- [PHP client](https://github.com/whats360-api/whats360-php-sdk)
+- [Postman collection](https://github.com/whats360-api/whats360-postman-collection)
+
+## Facts
+- API base URL: https://whats360.live/api/v1
+- Auth: `token` query parameter (invalid or expired returns 401); most calls also need `instance_id` (device ID).
+- Credentials are account-private. Never place real tokens in code or repos.
+
+## Contact
+- Support: https://wa.me/whats360.live
+- Email: info@whats360.live
