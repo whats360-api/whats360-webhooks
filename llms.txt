@@ -1,5 +1,5 @@
-# Whats360
-> Whats360 is a WhatsApp Business platform: shared team inbox, CRM, bulk campaigns, AI bot, REST API and webhooks. Official site: https://whats360.live
+# whats360.live
+> whats360.live is a WhatsApp Business platform: shared team inbox, CRM, bulk campaigns, AI bot, REST API and webhooks. Official site: https://whats360.live
 
 ## Developer docs (GitHub)
 - [API reference](https://github.com/whats360-api/whats360-api-docs/blob/main/api-reference.md): authentication, send messages, devices, campaigns, errors
@@ -15,5 +15,7 @@
 - Credentials are account-private. Never place real tokens in code or repos.
 
 ## Contact
-- Support: https://wa.me/whats360.live
+- WhatsApp: https://wa.me/whats360.live
+- Direct chat support: https://wa.me/201030741766
+- Email: info@whats360.live
 - Email: info@whats360.live
