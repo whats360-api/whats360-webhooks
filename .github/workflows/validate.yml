@@ -1,0 +1,21 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON and YAML
+        run: |
+          python3 -m pip install pyyaml
+          python3 - <<'PY'
+          import glob, json, yaml
+          for f in glob.glob('**/*.json', recursive=True):
+              if 'node_modules' not in f: json.load(open(f))
+          for f in glob.glob('**/*.y*ml', recursive=True):
+              yaml.safe_load(open(f))
+          print('json/yaml ok')
+          PY
+      - name: Secret pattern check
+        run: |
+          if grep -rIE "(token|api_key|apikey|secret)=[A-Za-z0-9]{16,}" --exclude-dir=.git --exclude=validate.yml .; then echo "possible secret"; exit 1; fi
